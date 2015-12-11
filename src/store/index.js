@@ -5,9 +5,9 @@ const store = {}
 
 Vue.use(Resource)
 
-store.getTopics = function() {
+store.getTopics = function(tab, page) {
   return function(){
-    this.$http.get('https://cnodejs.org/api/v1/topics?tab=all&page=1', function (data, status, request) {
+    this.$http.get('https://cnodejs.org/api/v1/topics?tab=' + tab + '&page=' + page, function (data, status, request) {
       console.log(data)
     })
   }
