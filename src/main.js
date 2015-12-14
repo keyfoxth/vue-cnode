@@ -8,13 +8,13 @@ Vue.use(Router)
 var router = new Router()
 
 router.map({
-  '/TopicsView': {
+  '/topicsView': {
     component: TopicsView
   }
 })
 
 router.redirect({
-  '*': '/TopicsView'
+  '*': '/topicsView'
 })
 
 router.start(App, '#app')

@@ -1,5 +1,5 @@
 <template>
-  <a v-link="{ path: '/TopicsView' }">TopicsView</a>
+  <a v-link="{ path: '/topicsView' }">TopicsView</a>
   <router-view
     class="view"
     keep-alive
